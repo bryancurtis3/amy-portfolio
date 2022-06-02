@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+
+.hero {
+  display: grid;
+  width: 100vw;
+  height: 20vh;
+  background-color: #b7442f;
+}
+.hero img {
+  width: inherit;
+  max-height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+}
+.hero h1, .hero h2 {
+  color: whitesmoke;
+  font-size: 48px;
+  border-radius: 5px;
+  margin: 0;
+  padding: 20px;
+}
+.hero .socials {
+  display: grid;
+  grid-template-columns: 50px 50px;
+  width: 100vw;
+  justify-items: center;
+  justify-content: right;
+  padding: 10px;
+}
+.hero .socials i {
+  font-size: 42px;
+}
+
+/*# sourceMappingURL=main.css.map */
