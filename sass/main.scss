@@ -9,18 +9,12 @@ body {
     padding: 0;
     width: 100vw;
 }
+
 main {
     width: 100vw;
     max-width: 900px;
     margin: 0 auto;
 }
-
-// main {
-//     width: 100vw;
-//     height: 100vh;
-//     display: grid;
-//     align-items: center;
-// }
 
 .hero {
     display: grid;
@@ -53,7 +47,6 @@ main {
 }
 
 .hero-img {
-    // width: 100%;
     height: 650px;
     padding-top: 150px;
     display: grid;
@@ -96,6 +89,24 @@ main {
     }
 }
 
+.footer {
+    padding: 10px 5vw 10px 5vw;
+    margin-top: 30px;
+    background-color: rgb(183, 68, 47);
+
+    i {
+        font-size: 48px;
+        color: whitesmoke;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    // padding: 0 10px;
+}
+
+// Break point to align videos vertically instead of horizontally
 @media only screen and (max-width: 900px) {
     .videos {
         grid-template-columns: none;
@@ -103,7 +114,8 @@ main {
     }
   }
 
-  @media only screen and (max-width: 500px) {
+// Single resize for main photo on mobile
+@media only screen and (max-width: 500px) {
     .hero-img {
         height: 550px;
 

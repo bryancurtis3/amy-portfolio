@@ -79,6 +79,21 @@ main {
   height: 100%;
 }
 
+.footer {
+  padding: 10px 5vw 10px 5vw;
+  margin-top: 30px;
+  background-color: #b7442f;
+}
+.footer i {
+  font-size: 48px;
+  color: whitesmoke;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
 @media only screen and (max-width: 900px) {
   .videos {
     grid-template-columns: none;
