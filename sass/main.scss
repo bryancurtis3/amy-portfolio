@@ -1,4 +1,7 @@
 // sass --watch sass:styles 
+// folklore: rgb(183, 68, 47)
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 * {
     box-sizing: border-box;
@@ -14,6 +17,15 @@ main {
     width: 100vw;
     max-width: 900px;
     margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#am-logo {
+    // Gains height at 650px
+    object-fit: cover;
+    width: 100vw;
+    height: 150px;
+    // padding: 20px 0 0 0;
 }
 
 .hero {
@@ -21,7 +33,7 @@ main {
     width: 100vw;
     position: absolute;
     height: 150px;
-    background-color: rgb(183, 68, 47);
+    background-color: rgb(214, 174, 109);
 
     h1, h2 {
         color: whitesmoke;
@@ -33,6 +45,8 @@ main {
     }
 
     .socials {
+        position: absolute;
+        margin-top: 90px;
         display: grid;
         grid-template-columns: 50px 50px;
         width: 100%;
@@ -92,7 +106,7 @@ main {
 .footer {
     padding: 10px 5vw 10px 5vw;
     margin-top: 30px;
-    background-color: rgb(183, 68, 47);
+    background-color: rgb(214, 174, 109);
 
     i {
         font-size: 48px;

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -12,6 +13,13 @@ main {
   width: 100vw;
   max-width: 900px;
   margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
+}
+
+#am-logo {
+  object-fit: cover;
+  width: 100vw;
+  height: 150px;
 }
 
 .hero {
@@ -19,7 +27,7 @@ main {
   width: 100vw;
   position: absolute;
   height: 150px;
-  background-color: #b7442f;
+  background-color: #d6ae6d;
 }
 .hero h1, .hero h2 {
   color: whitesmoke;
@@ -29,6 +37,8 @@ main {
   padding: 20px;
 }
 .hero .socials {
+  position: absolute;
+  margin-top: 90px;
   display: grid;
   grid-template-columns: 50px 50px;
   width: 100%;
@@ -82,7 +92,7 @@ main {
 .footer {
   padding: 10px 5vw 10px 5vw;
   margin-top: 30px;
-  background-color: #b7442f;
+  background-color: #d6ae6d;
 }
 .footer i {
   font-size: 48px;
