@@ -10,19 +10,18 @@ body {
     width: 100vw;
 }
 
+// main {
+//     width: 100vw;
+//     height: 100vh;
+//     display: grid;
+//     align-items: center;
+// }
+
 .hero {
     display: grid;
     width: 100vw;
     height: 20vh;
     background-color: rgb(183, 68, 47);
-
-    img {
-        width: inherit;
-        max-height: 100vh;
-        object-fit: cover;
-        position: absolute;
-        z-index: -1;
-    }
 
     h1, h2 {
         color: whitesmoke;
@@ -44,5 +43,29 @@ body {
         i {
             font-size: 42px;
         }
+    }
+}
+
+.hero-img {
+    width: 100vw;
+    height: 100vw;
+    display: grid;
+    place-items: center;
+    
+    img {
+        width: 60vw;
+        max-height: 60vw;
+        object-fit: cover;
+        border-radius: 50%;
+        z-index: -1;
+    }
+}
+
+.about {
+    p {
+        font-size: 18px;
+        line-height: 1.3em;
+        text-align: center;
+        margin: 0 20px;
     }
 }
