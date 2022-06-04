@@ -1,7 +1,7 @@
 // sass --watch sass:styles 
 // folklore: rgb(183, 68, 47)
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap');
 
 * {
     box-sizing: border-box;
@@ -11,13 +11,14 @@ body {
     margin: 0;
     padding: 0;
     width: 100vw;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
 }
 
 main {
     width: 100vw;
     max-width: 900px;
     margin: 0 auto;
-    font-family: 'Open Sans', sans-serif;
 }
 
 #am-logo {
@@ -46,16 +47,21 @@ main {
 
     .socials {
         position: absolute;
-        margin-top: 90px;
+        margin-top: 92px;
         display: grid;
-        grid-template-columns: 50px 50px;
+        grid-template-columns: 25vw 25vw;
         width: 100%;
-        justify-items: center;
-        justify-content: right;
-        padding: 10px;
+        place-items: center;
+        justify-content: space-between;
+        padding: 5px 0 10px 0;
 
-        i {
-            font-size: 42px;
+        .media, .business {
+            i {
+                font-size: 32px;
+                padding: 0px 10px;
+                width: 44px;
+                height: 32px;
+            }
         }
     }
 }
