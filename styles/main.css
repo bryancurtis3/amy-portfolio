@@ -13,7 +13,7 @@ body {
 
 main {
   width: 100vw;
-  max-width: 900px;
+  max-width: 950px;
   margin: 0 auto;
 }
 
@@ -25,6 +25,7 @@ main {
 
 .hero {
   display: grid;
+  justify-items: center;
   width: 100vw;
   position: absolute;
   height: 150px;
@@ -39,19 +40,31 @@ main {
 }
 .hero .socials {
   position: absolute;
+  width: 100%;
+  max-width: 950px;
   margin-top: 92px;
   display: grid;
   grid-template-columns: 25vw 25vw;
-  width: 100%;
   place-items: center;
   justify-content: space-between;
   padding: 5px 0 10px 0;
 }
-.hero .socials .media i, .hero .socials .business i {
-  font-size: 32px;
-  padding: 0px 10px;
+.hero .socials .media, .hero .socials .business {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-around;
+  width: 100%;
+}
+.hero .socials .media a, .hero .socials .business a {
   width: 44px;
   height: 32px;
+  margin: 0 auto;
+}
+.hero .socials .media a i, .hero .socials .business a i {
+  font-size: 32px;
+  padding: 0px 10px;
+  width: inherit;
+  height: inherit;
 }
 
 .hero-img {
@@ -94,6 +107,7 @@ main {
 }
 
 .footer {
+  width: 100vw;
   padding: 10px 5vw 10px 5vw;
   margin-top: 30px;
   background-color: #d6ae6d;
