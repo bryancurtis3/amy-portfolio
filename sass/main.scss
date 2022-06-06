@@ -27,7 +27,7 @@ a {
     color: whitesmoke;
     
     i {
-        transition: .2s;
+        transition: .15s;
     }
 
     i:hover {
@@ -116,7 +116,8 @@ a {
 // Embeded YouTube videos
 .videos {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 462px 462px;
+    grid-template-rows:  260px 260px;
     place-items: center;
     gap: 25px;
     width: 100%;
@@ -139,10 +140,10 @@ a {
 
 
 // Break point to align videos vertically instead of horizontally
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
     .videos {
         grid-template-columns: none;
-        grid-template-rows:  45vw 45vw 45vw;
+        grid-template-rows:  45vw 45vw 45vw 45vw;
     }
   }
 

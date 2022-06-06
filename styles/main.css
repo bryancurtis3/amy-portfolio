@@ -22,7 +22,7 @@ a {
   color: whitesmoke;
 }
 a i {
-  transition: 0.2s;
+  transition: 0.15s;
 }
 a i:hover {
   font-size: 55px;
@@ -99,7 +99,8 @@ a i:hover {
 
 .videos {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 462px 462px;
+  grid-template-rows: 260px 260px;
   place-items: center;
   gap: 25px;
   width: 100%;
@@ -118,10 +119,10 @@ a i:hover {
   background-color: #d6ae6d;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
   .videos {
     grid-template-columns: none;
-    grid-template-rows: 45vw 45vw 45vw;
+    grid-template-rows: 45vw 45vw 45vw 45vw;
   }
 }
 @media only screen and (max-width: 500px) {
