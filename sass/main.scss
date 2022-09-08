@@ -1,11 +1,15 @@
 // sass --watch sass:styles 
 // folklore: rgb(183, 68, 47)
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
 
 // Sweeping stylistic settings
 * {
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -32,73 +36,231 @@ a {
 
     i:hover {
         font-size: 55px;
-        transform: scale(1.3);
+        transform: scale(1.15);
     }
 }
 
 
 // Top of page
-#am-logo {
-    object-fit: cover;
-    width: 100vw;
-    height: 150px;
-}
 
-.hero {
-    display: grid;
-    justify-items: center;
-    width: 100vw;
-    position: absolute;
-    height: 150px;
-    background-color: rgb(214, 174, 109);
+.nav {
+    position: relative;
+    z-index: 11;
 
     .socials {
         position: absolute;
-        width: 100%;
-        max-width: 950px;
-        margin-top: 92px;
+        top: 34px;
+        left: 10vw;
+        width: 120px;
         display: grid;
-        grid-template-columns: 25vw 25vw;
+        grid-template-columns: 1fr 1fr;
         place-items: center;
-        justify-content: space-between;
-        padding: 5px 8px 10px 8px;
 
-        .media, .business {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            justify-content: space-around;
-            width: 100%;
+        a {
+            color: black;
+        }
+
+        i {
+            font-size: 38px;
+        }
+        // Custom set to make YouTube less wide
+        i.fa-youtube {
+            font-size: 32px;
+        }
+    }
+
+    .nav--text {
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+
+        .name {
+            font-size: 24px;
+            font-weight: 400;
+            letter-spacing: .05em;
+            margin: 15px 0px 20px 0px;
+            color: black;
+        }
+
+        .links {
+
             a {
-                width: 44px;
-                height: 32px;
-                margin: 0 auto;
-
-                i {
-                    font-size: 32px;
-                    padding: 0px 10px;
-                    width: inherit;
-                    height: inherit;
-                }
+                width: 25px;
+                font-size: 18px;
+                color: black;
+                padding: 0px 15px;
+                transition: .1s ease-in-out;
             }
         }
     }
 }
 
-// Main "profile" image
-.hero-img {
-    height: 650px;
-    padding-top: 150px;
-    display: grid;
-    place-items: center;
+.nav--mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    .nav {
+        display: none;
+    }
+
+    .nav--mobile {
+        position: relative;
+        top: 0;
+        z-index: 11;
+        display: flex;
+        justify-content: space-between;
+        width: 100vw;
+        height: 92px;
+        align-items: center;
+        padding: 0 20px;
+        
+        .name {
+            font-size: 24px;
+            color: black;
+            font-weight: 400;
+            letter-spacing: .05em;
+        }
+
+        .socials {
+            width: 120px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            place-items: center;
     
+            a {
+                color: black;
+            }
+    
+            i {
+                font-size: 28px;
+            }
+            // Custom set to make YouTube less wide
+            i.fa-youtube {
+                font-size: 24px;
+            }
+        }
+    }
+  }
+
+// #am-logo {
+//     object-fit: cover;
+//     width: 100vw;
+//     height: 150px;
+// }
+
+// .hero {
+//     display: grid;
+//     justify-items: center;
+//     width: 100vw;
+//     position: absolute;
+//     height: 150px;
+//     background-color: rgb(214, 174, 109);
+
+//     .socials {
+//         position: absolute;
+//         width: 100%;
+//         max-width: 950px;
+//         margin-top: 92px;
+//         display: grid;
+//         grid-template-columns: 25vw 25vw;
+//         place-items: center;
+//         justify-content: space-between;
+//         padding: 5px 8px 10px 8px;
+
+//         .media, .business {
+//             display: grid;
+//             grid-template-columns: 1fr 1fr;
+//             justify-content: space-around;
+//             width: 100%;
+//             a {
+//                 width: 44px;
+//                 height: 32px;
+//                 margin: 0 auto;
+
+//                 i {
+//                     font-size: 32px;
+//                     padding: 0px 10px;
+//                     width: inherit;
+//                     height: inherit;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// Main "profile" image
+.hero {
+    height: 100vh;
+    width: 100vw;
+    margin-top: -92px;
+    margin-bottom: 50px;
+    // display: grid;
+    // place-items: center;
+
     img {
-        width: 400px;
-        height: 400px;
+        position: absolute;
+        z-index: 0;
+        width: 100vw;
+        height: 100%;
         object-fit: cover;
-        border-radius: 50%;
-        z-index: -1;
+        object-position: 50% 0%;
+        top: 0;
+        // border-radius: 50%;
+        // z-index: -1;
+    }
+
+    .hero--text {
+        width: 100vw;
+        position: absolute;
+        top: 50vh;
+        display: grid;
+        text-align: center;
+        color: whitesmoke;
+
+        #hero--performer {
+            font-size: 42px;
+            font-weight: 400;
+            margin: 0;
+            padding: 15px 0px 30px 0px;
+        }
+
+        #hero--based {
+            font-size: 26px;
+            font-weight: 300;
+            margin: 0;
+            padding: 0px 10px;
+        }
+    }
+
+    .resume {
+        position: absolute;
+        top: 85vh;
+        left: calc(50% - 77px);
+
+        #resume {
+            left: -50%;
+            padding: 20px 30px;
+            color: black;
+            background-color: whitesmoke;
+            border-radius: 5px;
+            transition: .1s ease-in-out;
+            
+            &:hover {
+                background-color: rgba(245, 245, 245, .7);
+            }
+        } 
+
     }
 }
+
+@media only screen and (min-width: 950px) {
+    .hero {
+        img {
+            object-position: 50% 20%;
+        }
+    }
+  }
 
 // Text section
 .about {
@@ -148,13 +310,13 @@ a {
   }
 
 // Single resize for main photo on mobile
-@media only screen and (max-width: 500px) {
-    .hero-img {
-        height: 550px;
+// @media only screen and (max-width: 500px) {
+//     .hero-img {
+//         height: 550px;
 
-        img {
-            width: 300px;
-            height: 300px;
-        }
-    }
-  }
+//         img {
+//             width: 300px;
+//             height: 300px;
+//         }
+//     }
+//   }
