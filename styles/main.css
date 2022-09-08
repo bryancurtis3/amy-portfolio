@@ -170,9 +170,12 @@ a i:hover {
   background-color: rgba(245, 245, 245, 0.7);
 }
 
-@media only screen and (min-width: 950px) {
+@media only screen and (max-width: 650px) {
   .hero .hero--text {
-    top: 40vh;
+    top: 45vh;
+  }
+  .hero .resume {
+    top: 77vh;
   }
 }
 @media only screen and (min-width: 950px) {
