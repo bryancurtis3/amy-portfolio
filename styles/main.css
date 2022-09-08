@@ -171,6 +171,11 @@ a i:hover {
 }
 
 @media only screen and (min-width: 950px) {
+  .hero .hero--text {
+    top: 40vh;
+  }
+}
+@media only screen and (min-width: 950px) {
   .hero img {
     object-position: 50% 20%;
   }
