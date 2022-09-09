@@ -188,10 +188,25 @@ a i:hover {
   margin: 0 auto;
 }
 .about p {
-  font-size: 18px;
-  line-height: 1.3em;
+  font-size: 15px;
+  line-height: 1.5em;
   text-align: center;
   margin: 0 35px;
+}
+.about p #headline {
+  font-size: 24px;
+}
+.about p #more {
+  color: #878787;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+.about p #more:hover {
+  color: #414141;
+  font-weight: 400;
+}
+.about p #extended {
+  display: none;
 }
 
 .videos {
