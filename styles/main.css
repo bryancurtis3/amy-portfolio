@@ -115,6 +115,7 @@ a i:hover {
   }
   .nav--mobile .socials i.fa-youtube {
     font-size: 24px;
+    padding-right: 3px;
   }
 }
 .hero {
@@ -209,6 +210,12 @@ a i:hover {
   display: none;
 }
 
+#gallery, #videos {
+  text-align: center;
+  font-size: 32px;
+  margin: 30px 0;
+}
+
 .videos {
   display: grid;
   grid-template-columns: 462px 462px;
@@ -224,11 +231,51 @@ a i:hover {
   height: 100%;
 }
 
+.gallery {
+  margin-top: 20px;
+  padding: 0 20px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  gap: 20px;
+}
+.gallery img {
+  max-height: 90vh;
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+  .gallery img {
+    max-height: none;
+    max-width: 100%;
+  }
+}
 .footer {
   width: 100vw;
   padding: 10px 5vw 10px 5vw;
   margin-top: 30px;
-  background-color: #d6ae6d;
+  background-color: #f2f1ef;
+}
+.footer .footer--socials {
+  width: 160px;
+  margin: 0 auto 16px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+}
+.footer .footer--socials a {
+  color: black;
+}
+.footer .footer--socials i {
+  font-size: 32px;
+}
+.footer .footer--socials i.fa-youtube {
+  font-size: 30px;
+  padding-right: 3px;
 }
 
 @media only screen and (max-width: 1000px) {

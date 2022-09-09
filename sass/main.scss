@@ -138,6 +138,7 @@ a {
             // Custom set to make YouTube less wide
             i.fa-youtube {
                 font-size: 24px;
+                padding-right: 3px;
             }
         }
     }
@@ -264,6 +265,13 @@ a {
     }
 }
 
+// Section headers
+#gallery, #videos {
+    text-align: center;
+    font-size: 32px;
+    margin: 30px 0;
+}
+
 // Embeded YouTube videos
 .videos {
     display: grid;
@@ -281,12 +289,61 @@ a {
     }
 }
 
+// Photo gallery
+.gallery {
+    margin-top: 20px;
+    padding: 0 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 20px;
+
+    img {
+        max-height: 90vh;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .gallery {
+        grid-template-columns: 1fr;
+        
+        img {
+            max-height: none;
+            max-width: 100%;
+        }
+    }
+}
+
+
 // Bottom of page
 .footer {
     width: 100vw;
     padding: 10px 5vw 10px 5vw;
     margin-top: 30px;
-    background-color: rgb(214, 174, 109);
+    background-color: rgb(242, 241, 239);
+
+    .footer--socials {
+        width: 160px;
+        margin: 0 auto 16px auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        place-items: center;
+
+        a {
+            color: black;
+        }
+
+        i {
+            font-size: 32px;
+        }
+        // Custom set to make YouTube less wide
+        i.fa-youtube {
+            font-size: 30px;
+            padding-right: 3px;
+        }
+    }
 }
 
 
@@ -296,7 +353,7 @@ a {
         grid-template-columns: none;
         grid-template-rows:  45vw 45vw 45vw 45vw;
     }
-  }
+}
 
 // Single resize for main photo on mobile
 // @media only screen and (max-width: 500px) {
