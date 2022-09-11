@@ -40,7 +40,7 @@ a i:hover {
 .nav .socials {
   position: absolute;
   top: 34px;
-  left: 10vw;
+  left: 30px;
   width: 120px;
   display: grid;
   grid-template-columns: 1fr 1fr;
